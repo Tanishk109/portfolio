@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanishk Mittal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- 3D Background Canvas -->
+    <div id="canvas-container"></div>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <!-- 🔹 Navbar -->
+    <header class="navbar">
+        <h2 class="logo">Tanishk Mittal</h2>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-menu">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="socials.html">Socials</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- 🔹 Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm Tanishk 👋</h1>
+                <h3>Computer Science (IoT & Intelligent Systems)</h3>
+                <p>
+                    I build scalable tech solutions and lead high-impact initiatives.
+                    Passionate about product thinking, execution, and real-world problem solving.
+                </p>
+
+                <div class="buttons">
+                    <a href="projects.html" class="btn primary">View Projects</a>
+                    <a href="contact.html" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Profile-AZd5zp9mTKeGyRY98fzXhS21NC1Kcy.jpg" alt="Tanishk Profile">
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔹 Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2>Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <span class="skill-icon">💻</span>
+                    <p>C / Java / Python</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🎨</span>
+                    <p>HTML / CSS / JS</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">⚛️</span>
+                    <p>React / Tailwind</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🗄️</span>
+                    <p>MongoDB / MySQL</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🔧</span>
+                    <p>GitHub / MATLAB</p>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">📊</span>
+                    <p>Excel / Canva</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔹 Highlights Section -->
+    <section class="highlights">
+        <div class="container">
+            <h2>What I Do</h2>
+            <div class="highlight-grid">
+                <div class="highlight-card">
+                    <h3>💻 Development</h3>
+                    <p>Building web apps, systems, and scalable platforms with clean architecture.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>📊 Product Thinking</h3>
+                    <p>Focused on user experience, problem solving, and efficient execution.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <h3>🎯 Leadership</h3>
+                    <p>Leading teams, managing events, and executing high-scale initiatives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔹 Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat">
+                <h2 class="counter" data-target="5">0</h2>
+                <p>Dean's List Awards</p>
+            </div>
+        
+            <div class="stat">
+                <h2 class="counter" data-target="10">0</h2>
+                <p>Leadership Roles</p>
+            </div>
+        
+            <div class="stat">
+                <h2 class="counter" data-target="8">0</h2>
+                <p>Major Projects</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔹 CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Let's Build Something Meaningful 🚀</h2>
+            <a href="contact.html" class="btn primary">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- 🔹 Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/tanishk-mittal-b42719289/">LinkedIn</a></li>
+                        <li><a href="https://github.com/Tanishk109">GitHub</a></li>
+                        <li><a href="https://www.instagram.com/tqnishk.hehe/">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="tel:9728014818">+91 9728014818</a></p>
+                    <p><a href="mailto:tanishkmittal38@gmail.com">tanishkmittal38@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2025 Tanishk Mittal | Built with clarity, consistency & impact
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
