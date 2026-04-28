@@ -5,7 +5,44 @@ import { useEffect, useRef, useState } from 'react';
 export default function Portfolio() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const cursorGlowRef = useRef<HTMLDivElement>(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
   const [mounted, setMounted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
+
+  // Audio autoplay effect
+  useEffect(() => {
+    const savedMuteState = localStorage.getItem('portfolioMuted');
+    const shouldBeMuted = savedMuteState === 'true';
+    setIsMuted(shouldBeMuted);
+
+    if (audioRef.current) {
+      audioRef.current.muted = shouldBeMuted;
+      audioRef.current.volume = 0.3; // Set volume to 30% for background music
+      // Attempt autoplay
+      const playPromise = audioRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Autoplay was prevented, will play on user interaction
+          console.log('[v0] Autoplay prevented, waiting for user interaction');
+        });
+      }
+    }
+  }, []);
+
+  const toggleAudio = () => {
+    if (audioRef.current) {
+      const newMutedState = !isMuted;
+      setIsMuted(newMutedState);
+      audioRef.current.muted = newMutedState;
+      localStorage.setItem('portfolioMuted', String(newMutedState));
+      
+      if (!newMutedState && audioRef.current.paused) {
+        audioRef.current.play().catch(() => {
+          console.log('[v0] Audio play failed');
+        });
+      }
+    }
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -187,6 +224,17 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio-container">
+      <audio 
+        ref={audioRef}
+        loop
+        preload="auto"
+      >
+        <source 
+          src="https://assets.mixkit.co/active_storage/musics/677-ambient-calm.mp3"
+          type="audio/mpeg" 
+        />
+      </audio>
+
       <canvas ref={canvasRef} className="bg-canvas"></canvas>
       <div ref={cursorGlowRef} className="cursor-glow"></div>
 
@@ -200,6 +248,13 @@ export default function Portfolio() {
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
           </div>
+          <button 
+            className={`audio-toggle ${isMuted ? 'muted' : 'playing'}`}
+            onClick={toggleAudio}
+            title={isMuted ? 'Unmute' : 'Mute'}
+          >
+            {isMuted ? '🔇' : '🎵'}
+          </button>
         </nav>
 
         {/* HERO */}
@@ -511,6 +566,46 @@ export default function Portfolio() {
 
         .nav-links a:hover {
           color: var(--text);
+        }
+
+        .audio-toggle {
+          background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2));
+          border: 1px solid rgba(99, 102, 241, 0.3);
+          color: var(--text);
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+          transition: all 0.3s ease;
+          margin-left: 1rem;
+        }
+
+        .audio-toggle:hover {
+          border-color: var(--accent);
+          background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(168, 85, 247, 0.3));
+          transform: translateY(-2px);
+          box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+        }
+
+        .audio-toggle.playing {
+          animation: audioWave 1s ease-in-out infinite;
+        }
+
+        @keyframes audioWave {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.05);
+          }
+        }
+
+        .audio-toggle.muted {
+          opacity: 0.6;
         }
 
         .hero {
