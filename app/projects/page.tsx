@@ -58,22 +58,7 @@ export default function Projects() {
       live: '#',
       image: 'bg-gradient-to-br from-purple-400 to-purple-600',
     },
-    {
-      title: 'International Innovation Challenge Website',
-      description: 'Managed 36-hour hackathon with 1200+ registrations. Led team of 150+ across budget management, event logistics, and international coordination with 3+ countries.',
-      tags: ['Event Management', 'Leadership', 'Hackathon'],
-      github: '#',
-      live: '#',
-      image: 'bg-gradient-to-br from-orange-400 to-orange-600',
-    },
-    {
-      title: 'Blood Donation Drive Campaign',
-      description: 'Organized large-scale blood donation campaign that collected 1600+ units. Secured Rs.50K+ sponsorships and managed event budgets with corporate affairs coordination.',
-      tags: ['Community', 'Event Management', 'Healthcare'],
-      github: '#',
-      live: '#',
-      image: 'bg-gradient-to-br from-red-400 to-red-600',
-    },
+
   ]
 
   return (
@@ -156,7 +141,7 @@ export default function Projects() {
             <div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">Featured Projects</h1>
               <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl">
-                A showcase of my recent work spanning full-stack development, AI integration, and scalable solutions.
+                Building intelligent solutions through AI, deep learning, and scalable full-stack applications that solve real-world problems.
               </p>
             </div>
 

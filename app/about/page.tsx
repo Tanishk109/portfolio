@@ -66,6 +66,9 @@ export default function About() {
               <Link href="/projects" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Projects
               </Link>
+              <Link href="/leadership" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                Leadership
+              </Link>
               <Link href="/certifications" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Certifications
               </Link>
@@ -92,6 +95,9 @@ export default function About() {
                 </Link>
                 <Link href="/projects" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
                   Projects
+                </Link>
+                <Link href="/leadership" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
+                  Leadership
                 </Link>
                 <Link href="/certifications" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
                   Certifications
