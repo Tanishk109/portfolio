@@ -84,6 +84,9 @@ export default function Home() {
               <Link href="/projects" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Projects
               </Link>
+              <Link href="/certifications" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                Certifications
+              </Link>
               <Link href="/contact" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Contact
               </Link>
@@ -109,6 +112,9 @@ export default function Home() {
                 <Link href="/projects" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
                   Projects
                 </Link>
+                <Link href="/certifications" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
+                  Certifications
+                </Link>
                 <Link href="/contact" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
                   Contact
                 </Link>
@@ -122,10 +128,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                Hi, I&apos;m a <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Full Stack Developer</span>
+                Hi, I&apos;m <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Tanishk Mittal</span>
               </h1>
               <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
-                Building modern web applications with cutting-edge technologies. Passionate about creating beautiful, functional experiences.
+                Full Stack Developer & Product Manager. Building AI-driven solutions, scalable systems, and meaningful digital experiences. Currently pursuing B.Tech CSE (IoT & IS) at Manipal University Jaipur.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link
@@ -148,9 +154,37 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl opacity-10 blur-2xl" />
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Profile-AZd5zp9mTKeGyRY98fzXhS21NC1Kcy.jpg"
-                alt="Profile"
+                alt="Tanishk Mittal"
                 className="relative w-80 h-96 object-cover rounded-2xl shadow-2xl"
               />
+            </div>
+          </div>
+        </section>
+
+        {/* Stats Section */}
+        <section className="py-16 px-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">9.66</div>
+                <p className="text-slate-600 dark:text-slate-400">CGPA</p>
+                <p className="text-sm text-slate-500">B.Tech CSE</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">5</div>
+                <p className="text-slate-600 dark:text-slate-400">Dean&apos;s List</p>
+                <p className="text-sm text-slate-500">Consecutive Semesters</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">4</div>
+                <p className="text-slate-600 dark:text-slate-400">Major Projects</p>
+                <p className="text-sm text-slate-500">AI & Full-Stack</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">150+</div>
+                <p className="text-slate-600 dark:text-slate-400">Team Led</p>
+                <p className="text-sm text-slate-500">IIC 2.0 Hackathon</p>
+              </div>
             </div>
           </div>
         </section>
@@ -161,22 +195,26 @@ export default function Home() {
             <p className="text-center text-slate-600 dark:text-slate-400 mb-6">Connect with me</p>
             <div className="flex justify-center gap-6 flex-wrap">
               <a
-                href="#"
+                href="https://github.com/tanishk"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 rounded-lg font-semibold transition-colors"
               >
                 GitHub
               </a>
               <a
-                href="#"
+                href="https://linkedin.com/in/tanishk"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 rounded-lg font-semibold transition-colors"
               >
                 LinkedIn
               </a>
               <a
-                href="#"
+                href="mailto:tanishkmittal183@gmail.com"
                 className="px-6 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 rounded-lg font-semibold transition-colors"
               >
-                Twitter
+                Email
               </a>
             </div>
           </div>

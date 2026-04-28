@@ -27,49 +27,49 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-featured e-commerce platform with real-time inventory, payment processing, and admin dashboard.',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: '#',
+      title: 'Multi-Disease Detection using Deep Learning',
+      description: 'Built a DeepLabV3-based medical image segmentation model on ISIC 2018 dataset with 2K+ images. Processes and segments diverse skin lesion classes with MSE and PSNR evaluation.',
+      tags: ['PyTorch', 'DeepLabV3', 'OpenCV', 'Deep Learning'],
+      github: 'https://github.com/tanishk',
       live: '#',
       image: 'bg-gradient-to-br from-blue-400 to-blue-600',
     },
     {
-      title: 'AI Chat Application',
-      description: 'Real-time chat application powered by AI with natural language processing and sentiment analysis.',
-      tags: ['Next.js', 'TypeScript', 'WebSocket', 'OpenAI'],
-      github: '#',
-      live: '#',
-      image: 'bg-gradient-to-br from-purple-400 to-purple-600',
-    },
-    {
-      title: 'Task Management SaaS',
-      description: 'Collaborative task management tool with real-time updates, team collaboration, and analytics.',
-      tags: ['React', 'Firebase', 'TailwindCSS', 'Stripe'],
-      github: '#',
+      title: 'Rehabilitation Management Portal',
+      description: 'Designed scalable role-based system managing patient data, recovery workflows, and inventory across 495+ rehabilitation centers with support for 46 ATFs nationwide.',
+      tags: ['Full-Stack', 'Role-Based Access', 'Scalable System'],
+      github: 'https://github.com/tanishk',
       live: '#',
       image: 'bg-gradient-to-br from-green-400 to-green-600',
     },
     {
-      title: 'Data Visualization Dashboard',
-      description: 'Interactive dashboard for visualizing complex data with real-time updates and custom reports.',
-      tags: ['React', 'D3.js', 'PostgreSQL', 'Express'],
+      title: 'AI-Driven Smart Flood Management System',
+      description: 'Geospatial AI system using map-based data with GeoSpatial/GeoFencing concepts to predict flood-prone areas and enable early warnings.',
+      tags: ['AI', 'Geospatial', 'Python', 'Machine Learning'],
+      github: 'https://github.com/tanishk',
+      live: '#',
+      image: 'bg-gradient-to-br from-cyan-400 to-cyan-600',
+    },
+    {
+      title: 'Research Portal',
+      description: 'Full-stack web application with product management focus. Defined user personas, journeys, and feature requirements to improve project discovery and system workflow.',
+      tags: ['Full-Stack', 'Product Management', 'React', 'Node.js'],
+      github: 'https://github.com/tanishk',
+      live: '#',
+      image: 'bg-gradient-to-br from-purple-400 to-purple-600',
+    },
+    {
+      title: 'International Innovation Challenge Website',
+      description: 'Managed 36-hour hackathon with 1200+ registrations. Led team of 150+ across budget management, event logistics, and international coordination with 3+ countries.',
+      tags: ['Event Management', 'Leadership', 'Hackathon'],
       github: '#',
       live: '#',
       image: 'bg-gradient-to-br from-orange-400 to-orange-600',
     },
     {
-      title: 'Social Media Analytics',
-      description: 'Analytics platform for tracking social media metrics across multiple platforms with AI insights.',
-      tags: ['Next.js', 'Python', 'PostgreSQL', 'Machine Learning'],
-      github: '#',
-      live: '#',
-      image: 'bg-gradient-to-br from-pink-400 to-pink-600',
-    },
-    {
-      title: 'Video Streaming App',
-      description: 'Video streaming platform with adaptive bitrate, content management, and user recommendations.',
-      tags: ['React', 'Node.js', 'FFmpeg', 'AWS S3'],
+      title: 'Blood Donation Drive Campaign',
+      description: 'Organized large-scale blood donation campaign that collected 1600+ units. Secured Rs.50K+ sponsorships and managed event budgets with corporate affairs coordination.',
+      tags: ['Community', 'Event Management', 'Healthcare'],
       github: '#',
       live: '#',
       image: 'bg-gradient-to-br from-red-400 to-red-600',
@@ -111,6 +111,9 @@ export default function Projects() {
               <Link href="/projects" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors border-b-2 border-blue-600">
                 Projects
               </Link>
+              <Link href="/certifications" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                Certifications
+              </Link>
               <Link href="/contact" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Contact
               </Link>
@@ -134,6 +137,9 @@ export default function Projects() {
                 </Link>
                 <Link href="/projects" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
                   Projects
+                </Link>
+                <Link href="/certifications" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
+                  Certifications
                 </Link>
                 <Link href="/contact" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
                   Contact

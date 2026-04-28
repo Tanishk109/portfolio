@@ -26,9 +26,9 @@ export default function About() {
   }
 
   const skills = [
-    { category: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vue.js'] },
-    { category: 'Backend', items: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'Firebase'] },
-    { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'Vercel', 'GitHub Actions'] },
+    { category: 'Programming', items: ['Python', 'C', 'Java', 'SQL', 'JavaScript', 'TypeScript'] },
+    { category: 'Frameworks & ML', items: ['ReactJS', 'NodeJS', 'PyTorch', 'TensorFlow', 'OpenCV', 'DeepLabV3'] },
+    { category: 'Product & Domain', items: ['Product Thinking', 'User Journey Mapping', 'Feature Prioritization', 'Machine Learning', 'Geospatial AI'] },
   ]
 
   return (
@@ -66,6 +66,9 @@ export default function About() {
               <Link href="/projects" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Projects
               </Link>
+              <Link href="/certifications" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                Certifications
+              </Link>
               <Link href="/contact" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Contact
               </Link>
@@ -90,6 +93,9 @@ export default function About() {
                 <Link href="/projects" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
                   Projects
                 </Link>
+                <Link href="/certifications" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
+                  Certifications
+                </Link>
                 <Link href="/contact" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
                   Contact
                 </Link>
@@ -105,7 +111,7 @@ export default function About() {
             <div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">About Me</h1>
               <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl">
-                I&apos;m a passionate full-stack developer with 5+ years of experience building web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.
+                I&apos;m Tanishk Mittal, a passionate full-stack developer and product manager pursuing B.Tech in CSE with IoT & IS specialization. I specialize in building AI-driven solutions, scalable systems, and transforming complex problems into elegant, user-centric products.
               </p>
             </div>
 
@@ -153,29 +159,38 @@ export default function About() {
               </div>
             </div>
 
-            {/* Experience */}
+            {/* Leadership & Recognition */}
             <div>
-              <h2 className="text-3xl font-bold mb-8">Experience</h2>
+              <h2 className="text-3xl font-bold mb-8">Leadership & Recognition</h2>
               <div className="space-y-6">
                 <div className="p-6 bg-slate-50 dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold">Senior Full Stack Developer</h3>
-                    <span className="text-sm text-slate-600 dark:text-slate-400">2022 - Present</span>
+                    <h3 className="text-xl font-bold">Convenor - International Innovation Challenge 2.0</h3>
+                    <span className="text-sm text-slate-600 dark:text-slate-400">2024 - 2025</span>
                   </div>
-                  <p className="text-blue-600 font-semibold mb-2">Tech Company Inc</p>
+                  <p className="text-blue-600 font-semibold mb-2">Manipal University Jaipur</p>
                   <p className="text-slate-600 dark:text-slate-400">
-                    Leading development of modern web applications, mentoring junior developers, and architecting scalable solutions.
+                    Led a 150+ member team managing Rs.5 lakh budget. Executed 36-hour international hackathon with 1200+ registrations across India and 3+ countries.
                   </p>
                 </div>
                 <div className="p-6 bg-slate-50 dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold">Full Stack Developer</h3>
-                    <span className="text-sm text-slate-600 dark:text-slate-400">2020 - 2022</span>
+                    <h3 className="text-xl font-bold">General Secretary - IEEE WIE, MUJ</h3>
+                    <span className="text-sm text-slate-600 dark:text-slate-400">2024 - Present</span>
                   </div>
-                  <p className="text-blue-600 font-semibold mb-2">StartUp Co</p>
+                  <p className="text-blue-600 font-semibold mb-2">IEEE Women in Engineering</p>
                   <p className="text-slate-600 dark:text-slate-400">
-                    Built full-stack applications using React, Node.js, and various cloud services. Improved performance by 40%.
+                    Spearheaded international collaborations and diversity initiatives, engaging 50+ participants across 6+ countries.
                   </p>
+                </div>
+                <div className="p-6 bg-slate-50 dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800">
+                  <h3 className="text-xl font-bold mb-3">Awards & Achievements</h3>
+                  <ul className="space-y-2 text-slate-600 dark:text-slate-400">
+                    <li>• Dean&apos;s List Award (5 consecutive semesters)</li>
+                    <li>• Dr. TMA Pai Scholarship (3 consecutive years)</li>
+                    <li>• Student Excellence Award</li>
+                    <li>• District-Level 3rd Place - Poster Making</li>
+                  </ul>
                 </div>
               </div>
             </div>

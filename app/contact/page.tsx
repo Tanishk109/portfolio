@@ -71,6 +71,9 @@ export default function Contact() {
               <Link href="/projects" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 Projects
               </Link>
+              <Link href="/certifications" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                Certifications
+              </Link>
               <Link href="/contact" className="font-semibold hover:text-blue-600 dark:hover:text-blue-400 transition-colors border-b-2 border-blue-600">
                 Contact
               </Link>
@@ -94,6 +97,9 @@ export default function Contact() {
                 </Link>
                 <Link href="/projects" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
                   Projects
+                </Link>
+                <Link href="/certifications" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
+                  Certifications
                 </Link>
                 <Link href="/contact" className="block font-semibold hover:text-blue-600 dark:hover:text-blue-400 py-2">
                   Contact
@@ -121,8 +127,8 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-bold mb-1">Email</h3>
-                    <a href="mailto:contact@example.com" className="text-blue-600 dark:text-blue-400 hover:underline">
-                      contact@example.com
+                    <a href="mailto:tanishkmittal183@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">
+                      tanishkmittal183@gmail.com
                     </a>
                   </div>
                 </div>
@@ -130,8 +136,8 @@ export default function Contact() {
                   <Phone className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-bold mb-1">Phone</h3>
-                    <a href="tel:+1234567890" className="text-blue-600 dark:text-blue-400 hover:underline">
-                      +1 (234) 567-890
+                    <a href="tel:+919728014818" className="text-blue-600 dark:text-blue-400 hover:underline">
+                      +91 9728014818
                     </a>
                   </div>
                 </div>
@@ -140,7 +146,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold mb-1">Location</h3>
                     <p className="text-slate-600 dark:text-slate-400">
-                      San Francisco, California, USA
+                      Jaipur, Rajasthan, India
                     </p>
                   </div>
                 </div>
@@ -151,19 +157,25 @@ export default function Contact() {
                 <h3 className="font-bold mb-4">Follow Me</h3>
                 <div className="flex gap-4">
                   <a
-                    href="#"
+                    href="https://github.com/tanishk"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 rounded-lg transition-colors"
                   >
                     <Github size={20} />
                   </a>
                   <a
-                    href="#"
+                    href="https://linkedin.com/in/tanishk"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 rounded-lg transition-colors"
                   >
                     <Linkedin size={20} />
                   </a>
                   <a
-                    href="#"
+                    href="https://twitter.com/tanishk"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 bg-slate-100 dark:bg-slate-800 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 rounded-lg transition-colors"
                   >
                     <Twitter size={20} />
