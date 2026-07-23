@@ -866,11 +866,21 @@ p {
 
 .achievement-band {
   display: grid;
-  grid-template-columns: minmax(260px, 0.34fr) minmax(0, 1fr);
+  grid-template-columns: minmax(300px, 0.34fr) minmax(0, 1fr);
   gap: clamp(24px, 4vw, 44px);
   align-items: center;
   padding: clamp(22px, 4vw, 42px);
   border-block: 1px solid var(--border);
+}
+
+.achievement-band > div:first-child {
+  min-width: 0;
+  max-width: 420px;
+}
+
+.achievement-band h2 {
+  font-size: clamp(2.8rem, 5.3vw, 5.7rem);
+  line-height: 1.02;
 }
 
 .achievement-band > div > p {
@@ -880,7 +890,7 @@ p {
 
 .achievement-band h2 span {
   display: block;
-  white-space: nowrap;
+  max-width: 100%;
 }
 
 .achievement-grid {
