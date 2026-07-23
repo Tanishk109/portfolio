@@ -7,8 +7,7 @@ export function Achievements() {
         <div>
           <p className="eyebrow">Academic proof</p>
           <h2 id="achievements-title" className="achievement-title">
-            <span>B.Tech</span>
-            <span>CSE in</span>
+            <span>B.Tech CSE in</span>
             <span>IoT and</span>
             <span>Intelligent</span>
             <span>Systems</span>

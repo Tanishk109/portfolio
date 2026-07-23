@@ -878,10 +878,10 @@ p {
 }
 
 .achievement-title {
-  max-width: 520px;
-  font-size: 3.5rem;
-  line-height: 0.95;
-  letter-spacing: -0.045em;
+  max-width: 460px;
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
   overflow-wrap: normal;
   word-break: normal;
   hyphens: none;
@@ -902,13 +902,19 @@ p {
 
 @media (min-width: 640px) {
   .achievement-title {
-    font-size: 4.25rem;
+    font-size: 3.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .achievement-title {
-    font-size: clamp(4.75rem, 5.6vw, 6.5rem);
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .achievement-title {
+    font-size: 4.5rem;
   }
 }
 
