@@ -10,7 +10,7 @@ export const siteConfig = {
   locale: "en_US",
   links: {
     github: "https://github.com/Tanishk109",
-    linkedin: "https://linkedin.com/in/tanishk",
+    linkedin: "https://www.linkedin.com/in/tanishk-mittal-10112004pm/",
   },
 } as const
 
