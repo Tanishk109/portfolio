@@ -167,7 +167,6 @@ p {
 
 .section-intro h2,
 .experience-shell h2,
-.achievement-band h2,
 .contact-copy h2,
 .route-hero h1,
 .case-study h1 {
@@ -878,9 +877,15 @@ p {
   max-width: 420px;
 }
 
-.achievement-band h2 {
-  font-size: clamp(2.8rem, 5.3vw, 5.7rem);
-  line-height: 1.02;
+.achievement-title {
+  max-width: 520px;
+  font-size: 3.5rem;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  white-space: normal;
 }
 
 .achievement-band > div > p {
@@ -888,9 +893,23 @@ p {
   color: var(--muted);
 }
 
-.achievement-band h2 span {
+.achievement-title span {
   display: block;
-  max-width: 100%;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+@media (min-width: 640px) {
+  .achievement-title {
+    font-size: 4.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .achievement-title {
+    font-size: clamp(4.75rem, 5.6vw, 6.5rem);
+  }
 }
 
 .achievement-grid {
