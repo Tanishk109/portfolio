@@ -13,8 +13,8 @@ export function Achievements() {
           {achievements.map((achievement) => (
             <article key={achievement.label}>
               <strong>
-                {achievement.value}
-                {achievement.suffix}
+                <span>{achievement.value}</span>
+                {achievement.suffix ? <small>{achievement.suffix}</small> : null}
               </strong>
               <span>{achievement.label}</span>
               <p>{achievement.detail}</p>
