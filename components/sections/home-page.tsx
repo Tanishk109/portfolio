@@ -1,6 +1,7 @@
 import { SiteFooter } from "@/components/layout/site-footer"
 import { SiteHeader } from "@/components/layout/site-header"
 import { AboutEducation } from "@/components/sections/about-education"
+import { Achievements } from "@/components/sections/achievements"
 import { Capabilities } from "@/components/sections/capabilities"
 import { Contact } from "@/components/sections/contact"
 import { Experience } from "@/components/sections/experience"
@@ -18,6 +19,7 @@ export function HomePage() {
       <Hero />
       <LiveProjects />
       <AboutEducation />
+      <Achievements />
       <ProductThinking />
       <Capabilities />
       <Experience />

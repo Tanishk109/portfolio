@@ -68,6 +68,12 @@ export const achievements = [
     detail: "Consecutive academic years",
   },
   {
+    value: "Academic",
+    suffix: "",
+    label: "Excellence awards",
+    detail: "Merit-based academic recognition",
+  },
+  {
     value: "1,200",
     suffix: "+",
     label: "IIC 2.0 registrations",
