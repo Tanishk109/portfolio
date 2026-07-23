@@ -878,6 +878,11 @@ p {
   color: var(--muted);
 }
 
+.achievement-band h2 span {
+  display: block;
+  white-space: nowrap;
+}
+
 .achievement-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -2228,6 +2233,10 @@ p {
 }
 
 @media (max-width: 760px) {
+  .achievement-band h2 span {
+    white-space: normal;
+  }
+
   .hero-copy {
     max-width: min(100%, 19rem);
   }

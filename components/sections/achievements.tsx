@@ -6,7 +6,10 @@ export function Achievements() {
       <div className="achievement-band">
         <div>
           <p className="eyebrow">Academic proof</p>
-          <h2 id="achievements-title">{profile.degree}</h2>
+          <h2 id="achievements-title">
+            B.Tech CSE in IoT and
+            <span>Intelligent Systems</span>
+          </h2>
           <p>{profile.university}</p>
         </div>
         <div className="achievement-grid">
