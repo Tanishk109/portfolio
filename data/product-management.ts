@@ -5,6 +5,13 @@ export type ProductProcessStage = {
   items: string[]
 }
 
+export type EngineeringProcessStage = {
+  id: "architecture" | "api" | "auth" | "data" | "deployment"
+  label: string
+  summary: string
+  items: string[]
+}
+
 export type Persona = {
   role: string
   need: string
@@ -66,6 +73,59 @@ export const productProcess: ProductProcessStage[] = [
       "Project discovery rate",
       "Project-page-to-application conversion",
       "Faculty review turnaround time",
+    ],
+  },
+]
+
+export const engineeringProcess: EngineeringProcessStage[] = [
+  {
+    id: "architecture",
+    label: "Architecture",
+    summary: "Convert the selected product scope into a maintainable full-stack system.",
+    items: [
+      "Separate public discovery pages from authenticated student and faculty workspaces.",
+      "Keep dashboard routes role-aware instead of building one overloaded admin interface.",
+      "Map project, application, user and document flows before implementation.",
+    ],
+  },
+  {
+    id: "api",
+    label: "APIs",
+    summary: "Create backend workflows that match the actual product actions.",
+    items: [
+      "Project publishing and update endpoints for faculty workflows.",
+      "Student application submission and review-status endpoints.",
+      "Directory and discovery endpoints for projects and faculty profiles.",
+    ],
+  },
+  {
+    id: "auth",
+    label: "Authentication",
+    summary: "Protect user-specific workflows and keep permissions explicit.",
+    items: [
+      "JWT-based session handling for protected routes.",
+      "Password hashing and account verification for safer onboarding.",
+      "Role checks for student, faculty and coordinator-style workflows.",
+    ],
+  },
+  {
+    id: "data",
+    label: "Data model",
+    summary: "Model the research workflow as connected entities rather than loose forms.",
+    items: [
+      "MongoDB and Mongoose models for users, projects and applications.",
+      "Document upload fields for resumes and certificates.",
+      "Status fields that allow faculty review and student tracking.",
+    ],
+  },
+  {
+    id: "deployment",
+    label: "Deployment",
+    summary: "Ship the working app with environment-aware configuration.",
+    items: [
+      "Live Render deployment for the research portal.",
+      "Environment variables for database, authentication and email provider settings.",
+      "Production links shown only where a working deployment exists.",
     ],
   },
 ]
@@ -133,4 +193,32 @@ export const productMetrics = [
   "Faculty review turnaround time",
   "Student-to-faculty connection rate",
   "Returning active users",
+] as const
+
+export const engineeringStackMap = [
+  {
+    layer: "Frontend",
+    tools: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    layer: "Backend",
+    tools: ["Route handlers", "REST APIs", "JWT", "bcryptjs", "jose"],
+  },
+  {
+    layer: "Database",
+    tools: ["MongoDB", "Mongoose", "Schema design"],
+  },
+  {
+    layer: "Delivery",
+    tools: ["Render", "Environment config", "Resend integration"],
+  },
+] as const
+
+export const engineeringChecks = [
+  "Protected route boundaries",
+  "Role-aware dashboard access",
+  "Verified-account onboarding",
+  "Application review state",
+  "Upload-aware application records",
+  "Production environment configuration",
 ] as const

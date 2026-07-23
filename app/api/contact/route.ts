@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { Resend } from "resend"
+import nodemailer from "nodemailer"
 import { z } from "zod"
 
 const contactSchema = z.object({
@@ -25,23 +25,35 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: "Please complete every field with valid contact details." }, { status: 400 })
   }
 
-  const apiKey = process.env.RESEND_API_KEY
+  const host = process.env.SMTP_HOST
+  const port = Number(process.env.SMTP_PORT ?? 465)
+  const secure = process.env.SMTP_SECURE ? process.env.SMTP_SECURE === "true" : port === 465
+  const user = process.env.SMTP_USER
+  const pass = process.env.SMTP_PASS
   const to = process.env.CONTACT_TO_EMAIL ?? "tanishkmittal183@gmail.com"
-  const from = process.env.CONTACT_FROM_EMAIL
+  const from = process.env.CONTACT_FROM_EMAIL ?? user
 
-  if (!apiKey || !from) {
+  if (!host || !user || !pass || !from || Number.isNaN(port)) {
     return NextResponse.json(
       { message: "Couldn't send the message. Please email me directly." },
       { status: 503 },
     )
   }
 
-  const resend = new Resend(apiKey)
+  const transporter = nodemailer.createTransport({
+    host,
+    port,
+    secure,
+    auth: {
+      user,
+      pass,
+    },
+  })
   const { name, email, subject, message } = parsed.data
   const submittedAt = new Date().toISOString()
 
   try {
-    await resend.emails.send({
+    await transporter.sendMail({
       from,
       to,
       replyTo: email,

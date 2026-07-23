@@ -1,7 +1,7 @@
 export const siteConfig = {
   productionUrl:
     process.env.NEXT_PUBLIC_SITE_URL ??
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://tanishkmittal.com"),
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://tanishk.website"),
   name: "Tanishk Mittal",
   title: "Tanishk Mittal | Full-stack Developer with Product Thinking",
   description:
@@ -27,7 +27,7 @@ export const profile = {
   university: "Manipal University Jaipur",
   cgpa: "9.69/10",
   location: "Jaipur, Rajasthan, India",
-  email: "tanishkmittal183@gmail.com",
+  email: "support@tanishk.website",
   phone: undefined,
   availability: "Open to Software Engineering and Product Opportunities",
   currentFocus: "Discover -> Define -> Build -> Ship",
@@ -35,7 +35,7 @@ export const profile = {
   links: {
     github: siteConfig.links.github,
     linkedin: siteConfig.links.linkedin,
-    email: "mailto:tanishkmittal183@gmail.com",
+    email: "mailto:support@tanishk.website",
   },
 } as const
 
